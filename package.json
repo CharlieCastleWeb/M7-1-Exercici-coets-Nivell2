@@ -1,0 +1,22 @@
+{
+  "name": "m7-1-exercici-coets-nivell2",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CharlieCastleWeb/M7-1-Exercici-coets-Nivell2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CharlieCastleWeb/M7-1-Exercici-coets-Nivell2/issues"
+  },
+  "homepage": "https://github.com/CharlieCastleWeb/M7-1-Exercici-coets-Nivell2#readme",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  },
+  "description": ""
+}

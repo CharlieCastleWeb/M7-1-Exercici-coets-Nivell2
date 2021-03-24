@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>ROCKETS GAME!</title>
+</head>
+<body>
+    <main class="container text-center">
+        <h1>ROCKETS GAME!</h1>
+
+        <div>
+            <p>Welcome to the rockets game</p>
+        </div>
+
+        <div class="createRockets">
+            <button id="createRocket1" class="btn btn-primary">Create Rocket Player 1</button>
+            <button id="createRocket2" class="btn btn-primary">Create Rocket Player 2</button>
+            <button id="startGame" class="btn btn-primary">Start Game</button>
+        </div>
+
+        <div class="ShowRockets">
+            <table class="table mt-4 text-center">
+                <thead>
+                    <tr>
+                        <th scope="col">Player</th>
+                        <th scope="col">Code</th>
+                        <th scope="col">Engine 1</th>
+                        <th scope="col">Engine 2</th>
+                        <th scope="col">Engine 3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td id="p1-code"></td>
+                        <td id="p1-engine1"></td>
+                        <td id="p1-engine2"></td>
+                        <td id="p1-engine3"></td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td id="p2-code"></td>
+                        <td id="p2-engine1"></td>
+                        <td id="p2-engine2"></td>
+                        <td id="p2-engine3"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="d-flex justify-content-around mb-4 " id="playersControls">
+            <div>
+                <h3 class="text-center">Jugador 1</h3>
+                <h6 class="text-center" id="showPosition1">Posición:</h6>
+                <h5 class="text-center">Controles</h5>
+                <button class="btn btn-primary" id="acceleratePlayer1">Avance</button>
+                <button class="btn btn-primary" id="accelerateX2Player1">Avance x2</button>
+                <button class="btn btn-primary" id="passPlayer1">Pasar</button>
+            </div>
+            <div>
+                <h3 class="text-center">Jugador 2</h3>
+                <h6 class="text-center" id="showPosition2">Posición:</h6>
+                <h5 class="text-center">Controles</h5>
+                <button class="btn btn-primary" id="acceleratePlayer2">Avance</button>
+                <button class="btn btn-primary" id="accelerateX2Player2">Avance x2</button>
+                <button class="btn btn-primary" id="passPlayer2">Pasar</button>
+            </div>
+        </div>
+
+        
+        <h2 id="showWinner" class="text-primary bg-light display-1 mb-5 d-none">g</h2>
+        
+
+        <div class="rockets m-auto overflow-hidden" id="divRockets">
+            <img src="assets/rocket.svg" alt="" class="d-block" id="rocket1">
+            <img src="assets/rocket.svg" alt="" class="d-block" id="rocket2">
+        </div>
+
+        <!-- CODIGO ANTERIOR ELIMINAR PARA ENTREGAR 
+        <!-- Botones para crear cohetes  
+        <div class="createRockets">
+            <button id="createRocket1">Create Rocket 1</button>
+            <button id="createRocket2">Create Rocket 2</button>
+            <button id="createMoreRockets">Create new Rocket</button>
+        </div>
+
+        <!-- Botones para acelerar cohetes 
+        <div class="accelerateRockets">
+            <!--
+            <button id="accelerateRocket1">Accelerate Rocket 1</button>
+            <button id="accelerateRocket2">Accelerate Rocket 2</button>
+            <button id="brakeRocket1">Brake Rocket 1</button>
+            <button id="brakeRocket2">Brake Rocket 2</button>
+            
+        </div>
+
+        <!-- Botones para mostrar cohetes 
+        <div class="printRockets">
+            
+        </div>
+
+        <div>
+            <button id="printAll">Print all Rockets</button>
+        </div>
+
+        <!-- Mostrar cohetes 
+        <div class="showRocket"></div>
+        -->
+    </main>
+    <script src="../models/rocket.js"></script>
+    <script src="../controllers/controllers.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

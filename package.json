@@ -15,8 +15,5 @@
     "url": "https://github.com/CharlieCastleWeb/M7-1-Exercici-coets-Nivell2/issues"
   },
   "homepage": "https://github.com/CharlieCastleWeb/M7-1-Exercici-coets-Nivell2#readme",
-  "dependencies": {
-    "node-sass": "^5.0.0"
-  },
   "description": ""
 }

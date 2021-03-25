@@ -3,7 +3,7 @@ class Rocket {
     engines:number[]=new Array();
     position:number;
 
-    constructor(code:string,engines:number[], position) {
+    constructor(code:string,engines:number[], position:number) {
         this.code = code;
         this.engines = engines;
         this.position = 0;

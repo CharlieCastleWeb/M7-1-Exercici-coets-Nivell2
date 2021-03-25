@@ -11,17 +11,25 @@
 <body>
     <main class="container text-center">
         <h1>ROCKETS GAME!</h1>
-
-        <div>
-            <p>Welcome to the rockets game</p>
+        
+        <!--Descripción del juego-->
+        <div class="my-4 text-left">
+            <h4>Bienvenido a "Rockets Game"!</h4>
+            <p>El objetivo del juego es hacer avanzar tu cohete hasta la posición 1000 SIN PASARTE!</p>
+            <p>Se deberán crear dos cohetes, cada cohete tiene 3 motores de potencia aleatoria entre 0 y 100 que se usarán secuencialmente para avanzar en cada turno.</p>
+            <p>Tienes la opción de avanzar usando la potencia del motor actual, avanzar doblando la potencia o pasar turno sin moverte.</p>
+            <p>El motor actual lo verás remarcado en la tabla.</p>
+            <h5>Adelante !</h5>
         </div>
 
+        <!--Botones para crear cohetes-->
         <div class="createRockets">
             <button id="createRocket1" class="btn btn-primary">Create Rocket Player 1</button>
             <button id="createRocket2" class="btn btn-primary">Create Rocket Player 2</button>
             <button id="startGame" class="btn btn-primary">Start Game</button>
         </div>
 
+        <!--Tabla para mostrar cohetes-->
         <div class="ShowRockets">
             <table class="table mt-4 text-center">
                 <thead>
@@ -37,21 +45,22 @@
                     <tr>
                         <th scope="row">1</th>
                         <td id="p1-code"></td>
+                        <td id="p1-engine0" class="bg-dark text-light font-weight-bold"></td>
                         <td id="p1-engine1"></td>
                         <td id="p1-engine2"></td>
-                        <td id="p1-engine3"></td>
                     </tr>
                     <tr>
                         <th scope="row">2</th>
                         <td id="p2-code"></td>
+                        <td id="p2-engine0" class="bg-dark text-light font-weight-bold"></td>
                         <td id="p2-engine1"></td>
                         <td id="p2-engine2"></td>
-                        <td id="p2-engine3"></td>
                     </tr>
                 </tbody>
             </table>
         </div>
 
+        <!--Controles de juego-->
         <div class="d-flex justify-content-around mb-4 " id="playersControls">
             <div>
                 <h3 class="text-center">Jugador 1</h3>
@@ -65,51 +74,21 @@
                 <h3 class="text-center">Jugador 2</h3>
                 <h6 class="text-center" id="showPosition2">Posición:</h6>
                 <h5 class="text-center">Controles</h5>
-                <button class="btn btn-primary" id="acceleratePlayer2">Avance</button>
-                <button class="btn btn-primary" id="accelerateX2Player2">Avance x2</button>
-                <button class="btn btn-primary" id="passPlayer2">Pasar</button>
+                <button class="btn btn-primary" id="acceleratePlayer2" disabled>Avance</button>
+                <button class="btn btn-primary" id="accelerateX2Player2" disabled>Avance x2</button>
+                <button class="btn btn-primary" id="passPlayer2" disabled>Pasar</button>
             </div>
         </div>
 
-        
+        <!--Mostrar ganador-->
         <h2 id="showWinner" class="text-primary bg-light display-1 mb-5 d-none">g</h2>
         
-
+        <!--Mostrar imágenes de cohetes-->
         <div class="rockets m-auto overflow-hidden" id="divRockets">
             <img src="assets/rocket.svg" alt="" class="d-block" id="rocket1">
             <img src="assets/rocket.svg" alt="" class="d-block" id="rocket2">
         </div>
 
-        <!-- CODIGO ANTERIOR ELIMINAR PARA ENTREGAR 
-        <!-- Botones para crear cohetes  
-        <div class="createRockets">
-            <button id="createRocket1">Create Rocket 1</button>
-            <button id="createRocket2">Create Rocket 2</button>
-            <button id="createMoreRockets">Create new Rocket</button>
-        </div>
-
-        <!-- Botones para acelerar cohetes 
-        <div class="accelerateRockets">
-            <!--
-            <button id="accelerateRocket1">Accelerate Rocket 1</button>
-            <button id="accelerateRocket2">Accelerate Rocket 2</button>
-            <button id="brakeRocket1">Brake Rocket 1</button>
-            <button id="brakeRocket2">Brake Rocket 2</button>
-            
-        </div>
-
-        <!-- Botones para mostrar cohetes 
-        <div class="printRockets">
-            
-        </div>
-
-        <div>
-            <button id="printAll">Print all Rockets</button>
-        </div>
-
-        <!-- Mostrar cohetes 
-        <div class="showRocket"></div>
-        -->
     </main>
     <script src="../models/rocket.js"></script>
     <script src="../controllers/controllers.js"></script>

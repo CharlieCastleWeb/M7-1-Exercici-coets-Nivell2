@@ -20,6 +20,7 @@ let position2 = document.getElementById("showPosition2") as HTMLElement;
 let rocket2 = document.getElementById("rocket2") as HTMLImageElement;
 
 let turn:boolean = true;
+let showWinner = document.getElementById("showWinner") as HTMLElement;
 
 // Crea random rocket
 function createRandomRocket() {
@@ -105,7 +106,7 @@ function changeEngine(player:number, enginePlayer:number) {
 //Función cambio display de paneles
 function changeDisplays() {
     let playersControls = document.getElementById("playersControls") as HTMLDivElement;
-    let showWinner = document.getElementById("showWinner") as HTMLElement;
+    
     let divRockets = document.getElementById("divRockets") as HTMLDivElement;
     
     playersControls?.classList.remove("d-flex");

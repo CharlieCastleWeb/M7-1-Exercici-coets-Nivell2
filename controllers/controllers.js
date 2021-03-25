@@ -16,6 +16,7 @@ var enginePlayer2 = 0;
 var position2 = document.getElementById("showPosition2");
 var rocket2 = document.getElementById("rocket2");
 var turn = true;
+var showWinner = document.getElementById("showWinner");
 // Crea random rocket
 function createRandomRocket() {
     var engines = [];
@@ -92,7 +93,6 @@ function changeEngine(player, enginePlayer) {
 //Función cambio display de paneles
 function changeDisplays() {
     var playersControls = document.getElementById("playersControls");
-    var showWinner = document.getElementById("showWinner");
     var divRockets = document.getElementById("divRockets");
     playersControls === null || playersControls === void 0 ? void 0 : playersControls.classList.remove("d-flex");
     playersControls === null || playersControls === void 0 ? void 0 : playersControls.classList.add("d-none");

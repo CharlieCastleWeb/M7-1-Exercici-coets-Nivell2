@@ -122,12 +122,12 @@ function checkWinner(rockets:Rocket[]) {
         rocket2.style.left = 1030 + "px";
         showWinner.innerHTML = "Gana el jugador 2 ! ! !"
         changeDisplays();
-        rocket1.src = "assets/explosion.svg";
+        rocket1.src = "./views/assets/explosion.svg";
     } else if (rockets[0].position ==1000 || rockets[1].position > 1000) {
         rocket2.style.left = 1030 + "px";
         showWinner.innerHTML = "Gana el jugador 1 ! ! !"
         changeDisplays();
-        rocket2.src = "assets/explosion.svg";
+        rocket2.src = "./views/assets/explosion.svg";
     }
 }
 
